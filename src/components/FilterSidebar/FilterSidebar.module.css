@@ -1,0 +1,108 @@
+.sidebar {
+  width: 280px; 
+  padding: 20px 15px 20px 30px; 
+  font-family: Arial, sans-serif;
+  border-right: 1px solid #eaeaea;
+}
+
+.customizableSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.customizableSection .filterTitle {
+  margin: 0; 
+}
+
+.filterSection {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.filterTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.arrowOpen {
+  transform: rotate(180deg); 
+}
+
+.filterOptions {
+  padding-top: 15px;
+}
+
+.allOption {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.unselectLink {
+  display: block;
+  text-transform: uppercase;
+  color: #B2B2B2;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.filterList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filterList li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.filterList input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.filterList label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+    border-right: none;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px;
+  }
+}

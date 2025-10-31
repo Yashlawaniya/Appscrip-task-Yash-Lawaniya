@@ -1,0 +1,152 @@
+.footer {
+  background-color: #000;
+  color: #FFFFFF; 
+  padding-top: 40px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footerContainer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #333; 
+}
+
+.footerSection {
+  flex: 1;
+  min-width: 250px; 
+}
+
+.footerTitle {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.footerSection p {
+  color: #E5E5E5; 
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.subscribeForm {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribeInput {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+.subscribeButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footerSmallText {
+  font-size: 12px;
+  color: #888;
+}
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.footerLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 15px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.paymentIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.paymentIcon {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.copyrightBar {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #E5E5E5;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 0 20px;
+  }
+  
+  .footerTop, .footerBottom {
+    flex-direction: column;
+  }
+
+  .subscribeForm {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

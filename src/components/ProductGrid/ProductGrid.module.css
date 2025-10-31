@@ -1,0 +1,135 @@
+.gridContainer {
+  flex: 1;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 14px;
+  color: #777;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.itemCount {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hideFilter {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: normal;
+  color: #888;
+  cursor: pointer;
+}
+
+.sortContainer {
+  position: relative; 
+}
+
+.sortDropdown {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.sortDropdown:hover {
+  background-color: #f9f9f9;
+}
+
+.sortArrow {
+  font-size: 10px;
+}
+
+.sortMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 9;
+}
+
+.sortOption {
+  padding: 12px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.sortOption:hover {
+  background-color: #f0f0f0;
+}
+
+.sortOption:first-child {
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+@media (max-width: 600px) {
+  .filterHeader {
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  .itemCount {
+    justify-content: space-between; 
+  }
+
+  .sortContainer {
+    width: 100%;
+  }
+
+  .sortDropdown {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
